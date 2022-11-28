@@ -5,19 +5,25 @@ class Member{
   final String role;
   final String email;
   final String photo;
+  final String department;
+  final String birthdate;
   final bool reservation;
+  final bool isAccepted;
   final DocumentReference? reference;
 
-  Member.fromMap(Map<String, dynamic> map,{this.reference} )
-  : name = map['name'],
-    role = map['role'],
-    email = map['email'],
-    photo = map['photo'],
-    reservation = map['reservation'];
+  Member.fromMap(Map<String, dynamic>? map,{required this.reference} )
+  : name = map?['name'],
+    role = map?['role'],
+    birthdate = map?['birthdate'],
+    email = map?['email'],
+    photo = map?['photo'],
+    department = map?['department'],
+    isAccepted = map?['isAccepted'],
+    reservation = map?['reservation'];
 
 
-  Member.fromSnapshot(DocumentSnapshot snapshot)
-      : this.fromMap(snapshot.data() as Map<String, dynamic>, reference: snapshot.reference);
+  Member.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> snapshot)
+      : this.fromMap(snapshot.data() ,reference: snapshot.reference);
 
 
   @override

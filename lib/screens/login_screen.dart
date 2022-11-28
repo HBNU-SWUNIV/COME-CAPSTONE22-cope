@@ -5,6 +5,15 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:telemedicine_app1/doctorScreen/Feed.dart';
 import 'package:telemedicine_app1/screens/home_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:telemedicine_app1/widget/kakaologinpage.dart';
+import 'package:telemedicine_app1/widget/naver_button.dart';
+
+void main() {
+  KakaoSdk.init(nativeAppKey: 'de39f6175fa46cda780c2ec5d7061c8b');
+  runApp(LoginSignupScreen());
+}
 
 class LoginSignupScreen extends StatefulWidget {
   const LoginSignupScreen({Key? key}) : super(key: key);
@@ -14,6 +23,11 @@ class LoginSignupScreen extends StatefulWidget {
 }
 
 class _LoginSignupScreenState extends State<LoginSignupScreen> {
+  Future<void> _loginButtonPressed() async{
+    String authCode = await AuthCodeClient.instance.request();
+    print(authCode);
+  }
+
   final _authentication = FirebaseAuth.instance;
 
   bool isSignupScreen = false;
@@ -545,44 +559,14 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                   : MediaQuery.of(context).size.height - 250,
               right: 0,
               left: 0,
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 8.0,
-                  ),
-                  ElevatedButton(
-                    onPressed: (){
-                      print('네이버 로그인');
-                    },
-                    child: Text('네이버 로그인'),
-
-                    //ElevatedButton 은 backgroundColor 속성이 없다.
-                    //ElevatedButton 에서는 primary 속성이 배경색을 담당한다.
-                    style: ElevatedButton.styleFrom(
-                        minimumSize: Size(200, 40),
-                        primary: Colors.green,
-                        elevation: 0.0
-                    ),
-                  ),
-                  SizedBox(
-                    height: 8.0,
-                  ),
-                  OutlinedButton(
-                    onPressed: () {},
-                    style: TextButton.styleFrom(
-                        primary: Colors.brown,
-                        side:BorderSide(
-                          color:Palette.kakaoColor
-                        ),
-                        minimumSize: Size(200, 40),
-                        backgroundColor:Palette.kakaoColor),
-                    child: Text('카카오 로그인'),
-                  ),
-                ],
+              child:Column(
+                children:<Widget>[
+                  KakaoLoginPage(),
+                  NaverButton(),
+                ]
               ),
-            ),
-            // 로그인 버튼
-          ],
+              ),
+         ], // 로그인 버튼
         ),
       ),
     );

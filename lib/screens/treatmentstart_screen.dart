@@ -26,6 +26,11 @@ void goWebView(String url) async {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          title: Text('진료 예약 의사 리스트'),
+          centerTitle: true,
+
+        ),
         body: Container(
           child: FutureBuilder(
               future: FirebaseFirestore.instance
@@ -53,8 +58,7 @@ void goWebView(String url) async {
                                       Padding(
                                           padding: const EdgeInsets.all(10.0),
                                           child: Column(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.start,
+                                              crossAxisAlignment:CrossAxisAlignment.start,
                                               children: <Widget>[
                                                 Text(
                                                   collection['name'] + (' 의사'),
@@ -62,6 +66,13 @@ void goWebView(String url) async {
                                                     fontSize: 21,
                                                     color: Colors.black,
                                                     fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
+                                                Text(
+                                                  collection['department'],
+                                                  style: TextStyle(
+                                                    fontSize: 15,
+                                                    color: Colors.black,
                                                   ),
                                                 ),
                                                 Text(

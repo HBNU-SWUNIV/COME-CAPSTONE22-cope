@@ -8,31 +8,6 @@ class SearchScreen extends StatefulWidget {
 }
 
 class _SearchScreenState extends State<SearchScreen> {
-  /*
-  List<Member> members = [
-    Member.fromMap({
-      'name': 'name1',
-      'department': 'dentist',
-      'photo': 'doctor_photo_1.jpg',
-    }),
-    Member.fromMap({
-      'name': 'name2',
-      'department': 'dentist',
-      'photo': 'doctor_photo_2.jpg',
-    }),
-    Member.fromMap({
-      'name': 'name3',
-      'department': 'dentist',
-      'photo': 'doctor_photo_3.jpg',
-    }),
-    Member.fromMap({
-      'name': 'name4',
-      'department': 'dentist',
-      'photo': 'doctor_photo_4.jpg',
-    }),
-  ];
-  
-*/
   final TextEditingController _filter = TextEditingController();
   FocusNode focusNode = FocusNode();
   String _searchText = "";
@@ -74,6 +49,7 @@ class _SearchScreenState extends State<SearchScreen> {
                             },
                             child: Card(
                               child: Column(
+                                crossAxisAlignment:CrossAxisAlignment.start,
                                 children: <Widget>[
                                   Row(
                                     children: [
@@ -89,7 +65,26 @@ class _SearchScreenState extends State<SearchScreen> {
                                     width: 20,
                                   ),
                                   Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      SizedBox(
+                                        height: 5,
+                                      ),
+                                      Text(
+                                        collection['department'],
+                                        style: TextStyle(
+                                            fontSize: 20, color: Colors.black),
+                                      ),
+                                      SizedBox(
+                                        height: 5,
+                                      ),
+
+                                    ],
+                                  ),
+
+                                  SizedBox(
+                                    width: 20,
+                                  ),
+                                  Column(
                                     children: [
                                       SizedBox(
                                         height: 5,
@@ -105,6 +100,8 @@ class _SearchScreenState extends State<SearchScreen> {
                                       
                                     ],
                                   ),
+
+
                                   SizedBox(
                                     width: 20,
                                   ),

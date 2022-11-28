@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:telemedicine_app1/screens/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'telemedicine app',
       theme: ThemeData(
           primarySwatch: Colors.blue

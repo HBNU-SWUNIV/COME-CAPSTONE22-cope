@@ -25,18 +25,20 @@ dependencies:
     sdk: flutter
 
 
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.4
-  cloud_firestore: ^3.1.15
-  firebase_core: ^1.17.0
-  firebase_auth: ^3.3.18
+  cloud_firestore: ^4.0.3
+  firebase_core: ^2.1.1
+  firebase_auth: ^4.1.0
   kakao_flutter_sdk: ^1.1.1
   google_sign_in: ^5.3.1
   flutter_linkify:
   carousel_slider:
   flutter_inappwebview: ^5.4.3
   url_launcher: ^6.1.2
+  flutter_naver_login: ^1.6.0
 
 
 dev_dependencies:
@@ -63,6 +65,7 @@ flutter:
     - image/doctor_photo_3.jpg
     - image/doctor_photo_4.jpg
     - image/myimage.jpg
+    - image/naver_logo.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
