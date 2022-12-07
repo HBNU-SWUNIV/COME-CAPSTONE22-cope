@@ -2,16 +2,12 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:telemedicine_app1/config/palette.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:telemedicine_app1/doctorScreen/Feed.dart';
 import 'package:telemedicine_app1/screens/home_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:telemedicine_app1/widget/kakaologinpage.dart';
-import 'package:telemedicine_app1/widget/naver_button.dart';
+import 'package:telemedicine_app1/doctorScreen/mainpage.dart';
 
 void main() {
-  KakaoSdk.init(nativeAppKey: 'de39f6175fa46cda780c2ec5d7061c8b');
   runApp(LoginSignupScreen());
 }
 
@@ -23,22 +19,23 @@ class LoginSignupScreen extends StatefulWidget {
 }
 
 class _LoginSignupScreenState extends State<LoginSignupScreen> {
-  Future<void> _loginButtonPressed() async{
-    String authCode = await AuthCodeClient.instance.request();
-    print(authCode);
-  }
 
   final _authentication = FirebaseAuth.instance;
 
   bool isSignupScreen = false;
   final _formKey = GlobalKey<FormState>();
+  String description = '';
+  String information = '';
   String userName = '';
+  String doctorName = '';
   String userEmail = '';
+  String doctorEmail ='';
   String userPassword = '';
+  String doctorPassword ='';
   String userBirthdate = '';
-  String userPhoneNumber = '';
-  String userDepartment = '';
-  bool? isDoctor =null;
+  String doctorDepearment ='';
+  bool isAccepted = false;
+  bool? isDoctor =false;
   bool _isloaded =false;
 
   void _tryValidation() {
@@ -196,7 +193,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                           )
                         ],
                       ),
-                      if (isSignupScreen)
+                      if ((isSignupScreen)&&(!kIsWeb))
                         Container(
                           margin: EdgeInsets.only(top: 20),
                           child: Form(
@@ -319,8 +316,8 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                             color: Palette.textColor1),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
-                                            color: Palette.textColor1)
+                                          borderSide: BorderSide(
+                                              color: Palette.textColor1)
                                       ),
                                       hintText: '생년월일 ',
                                       hintStyle: TextStyle(
@@ -335,7 +332,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                             ),
                           ),
                         ),
-                      if (!isSignupScreen)
+                      if ((isSignupScreen)&&(kIsWeb))
                         Container(
                           margin: EdgeInsets.only(top: 20),
                           child: Form(
@@ -344,6 +341,145 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                               children: [
                                 TextFormField(
                                   key: ValueKey(5),
+                                  onSaved: (value) {
+                                    doctorName = value!;
+                                  },
+                                  onChanged: (value) {
+                                    doctorName = value;
+                                  },
+                                  decoration: InputDecoration(
+                                      prefixIcon: Icon(
+                                        Icons.account_circle,
+                                        color: Palette.iconColor,
+                                      ),
+                                      enabledBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                            color: Palette.textColor1),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                            color: Palette.textColor1),
+                                      ),
+                                      hintText: '이름',
+                                      hintStyle: TextStyle(
+                                          fontSize: 14,
+                                          color: Palette.textColor1),
+                                      contentPadding: EdgeInsets.all(10)),
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                TextFormField(
+                                  keyboardType: TextInputType.emailAddress,
+                                  key: ValueKey(6),
+                                  onSaved: (value) {
+                                    doctorEmail = value!;
+                                  },
+                                  onChanged: (value) {
+                                    doctorEmail = value;
+                                  },
+                                  decoration: InputDecoration(
+                                      prefixIcon: Icon(
+                                        Icons.mail,
+                                        color: Palette.iconColor,
+                                      ),
+                                      enabledBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                            color: Palette.textColor1),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                            color: Palette.textColor1),
+                                      ),
+                                      hintText: '이메일',
+                                      hintStyle: TextStyle(
+                                          fontSize: 14,
+                                          color: Palette.textColor1),
+                                      contentPadding: EdgeInsets.all(10)),
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                TextFormField(
+                                  obscureText: true,
+                                  key: ValueKey(7),
+                                  validator: (value) {
+                                    if (value!.isEmpty || value.length < 6) {
+                                      return '비밀번호는 7자 이상이어야 합니다.';
+                                    }
+                                    return null;
+                                  },
+                                  onSaved: (value) {
+                                    doctorPassword = value!;
+                                  },
+                                  onChanged: (value) {
+                                    doctorPassword = value;
+                                  },
+                                  decoration: InputDecoration(
+                                      prefixIcon: Icon(
+                                        Icons.lock,
+                                        color: Palette.iconColor,
+                                      ),
+                                      enabledBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                            color: Palette.textColor1),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                            color: Palette.textColor1),
+                                      ),
+                                      hintText: '비밀번호',
+                                      hintStyle: TextStyle(
+                                          fontSize: 14,
+                                          color: Palette.textColor1),
+                                      contentPadding: EdgeInsets.all(10)),
+                                ),
+                                SizedBox(
+                                  height: 8.0,
+                                ),
+                                TextFormField(
+                                  key: ValueKey(8),
+                                  onSaved: (value) {
+                                    doctorDepearment = value!;
+                                  },
+                                  onChanged: (value) {
+                                    doctorDepearment = value;
+                                  },
+                                  decoration: InputDecoration(
+                                      prefixIcon: Icon(
+                                        Icons.event,
+                                        color: Palette.iconColor,
+                                      ),
+                                      enabledBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                            color: Palette.textColor1),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: Palette.textColor1)
+                                      ),
+                                      hintText: '부서 입력 ',
+                                      hintStyle: TextStyle(
+                                          fontSize: 14,
+                                          color: Palette.textColor1),
+                                      contentPadding: EdgeInsets.all(10)),
+                                ),
+                                SizedBox(
+                                  height: 8.0,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      if ((!isSignupScreen)&&(!kIsWeb))
+                        Container(
+                          margin: EdgeInsets.only(top: 20),
+                          child: Form(
+                            key: _formKey,
+                            child: Column(
+                              children: [
+                                TextFormField(
+                                  key: ValueKey(9),
                                   onSaved: (value) {
                                     userEmail = value!;
                                   },
@@ -374,7 +510,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                 ),
                                 TextFormField(
                                   obscureText: true,
-                                  key: ValueKey(6),
+                                  key: ValueKey(10),
                                   validator: (value) {
                                     if (value!.isEmpty || value.length < 6) {
                                       return '비밀번호는 7자 이상이어야 합니다.';
@@ -406,11 +542,87 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                           color: Palette.textColor1),
                                       contentPadding: EdgeInsets.all(10)),
                                 ),
-                                
+
                               ],
                             ),
                           ),
-                        )
+                        ),
+                      if ((!isSignupScreen)&&(kIsWeb))
+                        Container(
+                          margin: EdgeInsets.only(top: 20),
+                          child: Form(
+                            key: _formKey,
+                            child: Column(
+                              children: [
+                                TextFormField(
+                                  key: ValueKey(11),
+                                  onSaved: (value) {
+                                    doctorEmail = value!;
+                                  },
+                                  onChanged: (value) {
+                                    doctorEmail = value;
+                                  },
+                                  decoration: InputDecoration(
+                                      prefixIcon: Icon(
+                                        Icons.mail,
+                                        color: Palette.iconColor,
+                                      ),
+                                      enabledBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                            color: Palette.textColor1),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                            color: Palette.textColor1),
+                                      ),
+                                      hintText: '이메일 ',
+                                      hintStyle: TextStyle(
+                                          fontSize: 14,
+                                          color: Palette.textColor1),
+                                      contentPadding: EdgeInsets.all(10)),
+                                ),
+                                SizedBox(
+                                  height: 8.0,
+                                ),
+                                TextFormField(
+                                  obscureText: true,
+                                  key: ValueKey(12),
+                                  validator: (value) {
+                                    if (value!.isEmpty || value.length < 6) {
+                                      return '비밀번호는 7자 이상이어야 합니다.';
+                                    }
+                                    return null;
+                                  },
+                                  onSaved: (value) {
+                                    doctorPassword = value!;
+                                  },
+                                  onChanged: (value) {
+                                    doctorPassword = value;
+                                  },
+                                  decoration: InputDecoration(
+                                      prefixIcon: Icon(
+                                        Icons.lock,
+                                        color: Palette.iconColor,
+                                      ),
+                                      enabledBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                            color: Palette.textColor1),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                            color: Palette.textColor1),
+                                      ),
+                                      hintText: '비밀번호 ',
+                                      hintStyle: TextStyle(
+                                          fontSize: 14,
+                                          color: Palette.textColor1),
+                                      contentPadding: EdgeInsets.all(10)),
+                                ),
+
+                              ],
+                            ),
+                          ),
+                        ),
                     ],
                   ),
                 ),
@@ -433,7 +645,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                       borderRadius: BorderRadius.circular(50)),
                   child: GestureDetector(
                     onTap: () async {
-                      if (isSignupScreen) {
+                      if ((isSignupScreen)&&(!kIsWeb)) {
                         _tryValidation();
 
                         try {
@@ -448,23 +660,12 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                               .set({
                             'name' : userName,
                             'email' : userEmail,
-                            'isDoctor' : 'false',
                             'department' : 'null',
                             'birthdate' : userBirthdate
                           });
-                          
-                           if ((newUser.user != null)&&(kIsWeb)) {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) {
-                                  return Feed();
-                                },
-                              ),
-                            );
-                          }
-                          
-                          if ((newUser.user != null)&&(!kIsWeb)) {
+
+
+                          if (newUser.user != null) {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -487,7 +688,77 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                           );
                         }
                       }
-                      if (!isSignupScreen) {
+                      if ((isSignupScreen)&&(kIsWeb)) {
+                        _tryValidation();
+
+                        try {
+                          final newUser = await _authentication
+                              .createUserWithEmailAndPassword(
+                              email: doctorEmail,
+                              password: doctorPassword
+                          );
+                          _isloaded = true;
+
+                          await FirebaseFirestore.instance.collection('doctor').doc(newUser.user!.uid)
+                              .set({
+                            'name' : doctorName,
+                            'email' : doctorEmail,
+                            'department' : 'null',
+                            'isAccepted' : 'false',
+                            'prescription' : 'null',
+                            'reservation' : 'null'
+                          });
+
+                          if (newUser.user != null) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return MainPage();
+                                },
+                              ),
+                            );
+                          }
+
+
+                        } catch (e) {
+                          print(e);
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content:
+                              Text('이메일과 비밀번호를 확인하세요'),
+                              backgroundColor: Colors.blue,
+                            ),
+                          );
+                        }
+                      }
+                      if ((!isSignupScreen)&&(kIsWeb)) {
+                        _tryValidation();
+
+                        try {
+                          final newUser =
+                          await _authentication.signInWithEmailAndPassword(
+                            email: doctorEmail,
+                            password: doctorPassword,
+                          );
+                          _isloaded = true;
+
+                          if (newUser.user != null)
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return MainPage();
+                                },
+                              ),
+                            );
+
+                          
+                        }catch(e){
+                          print(e);
+                        }
+                      }
+                      if ((!isSignupScreen)&&(!kIsWeb)) {
                         _tryValidation();
 
                         try {
@@ -498,18 +769,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                           );
                           _isloaded = true;
 
-                          if ((newUser.user != null)&&(kIsWeb)) {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) {
-                                  return Feed();
-                                },
-                              ),
-                            );
-                          }
-                          
-                          if ((newUser.user != null)&&(!kIsWeb)) {
+                          if (newUser.user != null)
                             Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -518,8 +778,8 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                 },
                               ),
                             );
-                          }
-                          
+
+
                         }catch(e){
                           print(e);
                         }
@@ -551,21 +811,6 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
               ),
             ),
             //전송버튼
-            AnimatedPositioned(
-              duration: Duration(milliseconds: 500),
-              curve: Curves.easeIn,
-              top: isSignupScreen
-                  ? MediaQuery.of(context).size.height - 150
-                  : MediaQuery.of(context).size.height - 250,
-              right: 0,
-              left: 0,
-              child:Column(
-                children:<Widget>[
-                  KakaoLoginPage(),
-                  NaverButton(),
-                ]
-              ),
-              ),
          ], // 로그인 버튼
         ),
       ),

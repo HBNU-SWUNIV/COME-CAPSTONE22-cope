@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
-class MyPageScreen extends StatefulWidget {
+class MyPage extends StatefulWidget {
   @override
-  _MyPageScreenState createState() => _MyPageScreenState();
+  _MyPageState createState() => _MyPageState();
 }
 
-class _MyPageScreenState extends State<MyPageScreen> with SingleTickerProviderStateMixin {
+class _MyPageState extends State<MyPage> with SingleTickerProviderStateMixin {
   bool _status = true;
   final FocusNode myFocusNode = FocusNode();
 
@@ -20,43 +19,12 @@ class _MyPageScreenState extends State<MyPageScreen> with SingleTickerProviderSt
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-        appBar: AppBar(
-          title: Text('환자 정보 입력 '),
-          centerTitle: true,
-          actions: [
-            IconButton(
-              icon: Icon(
-                Icons.exit_to_app_sharp,
-                color: Colors.white,
-              ),
-              onPressed: () {
-                FirebaseAuth.instance.signOut();
-              },
-            )
-          ],
-
-        ),
         body: new Container(
+          color: Colors.white,
           child: new ListView(
             children: <Widget>[
               Column(
                 children: <Widget>[
-                  new Container(
-                    height: 60.0,
-                    color: Colors.white,
-                    child: new Column(
-                      children: <Widget>[
-                        Padding(
-                          padding: EdgeInsets.only(top: 20.0),
-                          child: new Stack(fit: StackFit.loose, children: <Widget>[
-                            Padding(
-                                padding: EdgeInsets.only(top: 40.0, right: 50.0),
-                            ),
-                          ]),
-                        )
-                      ],
-                    ),
-                  ),
                   new Container(
                     color: Color(0xffFFFFFF),
                     child: Padding(
@@ -72,6 +40,18 @@ class _MyPageScreenState extends State<MyPageScreen> with SingleTickerProviderSt
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 mainAxisSize: MainAxisSize.max,
                                 children: <Widget>[
+                                  new Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: <Widget>[
+                                      new Text(
+                                        'Parsonal Information',
+                                        style: TextStyle(
+                                            fontSize: 18.0,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ],
+                                  ),
                                   new Column(
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     mainAxisSize: MainAxisSize.min,
@@ -110,7 +90,7 @@ class _MyPageScreenState extends State<MyPageScreen> with SingleTickerProviderSt
                                   new Flexible(
                                     child: new TextField(
                                       decoration: const InputDecoration(
-                                          hintText: "이름",
+                                        hintText: "의사이름",
                                       ),
                                       enabled: !_status,
                                       autofocus: !_status,
@@ -129,7 +109,7 @@ class _MyPageScreenState extends State<MyPageScreen> with SingleTickerProviderSt
                                     mainAxisSize: MainAxisSize.min,
                                     children: <Widget>[
                                       new Text(
-                                        '증상 기입 ',
+                                        'Email',
                                         style: TextStyle(
                                             fontSize: 16.0,
                                             fontWeight: FontWeight.bold),
@@ -147,42 +127,7 @@ class _MyPageScreenState extends State<MyPageScreen> with SingleTickerProviderSt
                                   new Flexible(
                                     child: new TextField(
                                       decoration: const InputDecoration(
-                                          hintText: "상세히 기입하세요  "),
-                                      enabled: !_status,
-                                    ),
-                                  ),
-                                ],
-                              )),
-                          Padding(
-                              padding: EdgeInsets.only(
-                                  left: 25.0, right: 25.0, top: 25.0),
-                              child: new Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: <Widget>[
-                                  new Column(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: <Widget>[
-                                      new Text(
-                                        '특이사항  ',
-                                        style: TextStyle(
-                                            fontSize: 16.0,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              )),
-                          Padding(
-                              padding: EdgeInsets.only(
-                                  left: 25.0, right: 25.0, top: 2.0),
-                              child: new Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: <Widget>[
-                                  new Flexible(
-                                    child: new TextField(
-                                      decoration: const InputDecoration(
-                                          hintText: "과거 병력 등 "),
+                                          hintText: "adfe@gmail.com"),
                                       enabled: !_status,
                                     ),
                                   ),
@@ -217,42 +162,7 @@ class _MyPageScreenState extends State<MyPageScreen> with SingleTickerProviderSt
                                   new Flexible(
                                     child: new TextField(
                                       decoration: const InputDecoration(
-                                          hintText: "010-1234-1234"),
-                                      enabled: !_status,
-                                    ),
-                                  ),
-                                ],
-                              )),
-                          Padding(
-                              padding: EdgeInsets.only(
-                                  left: 25.0, right: 25.0, top: 25.0),
-                              child: new Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: <Widget>[
-                                  new Column(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: <Widget>[
-                                      new Text(
-                                        '생년월일 ',
-                                        style: TextStyle(
-                                            fontSize: 16.0,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              )),
-                          Padding(
-                              padding: EdgeInsets.only(
-                                  left: 25.0, right: 25.0, top: 2.0),
-                              child: new Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: <Widget>[
-                                  new Flexible(
-                                    child: new TextField(
-                                      decoration: const InputDecoration(
-                                          hintText: "19990919"),
+                                          hintText: "010-2225-1234"),
                                       enabled: !_status,
                                     ),
                                   ),

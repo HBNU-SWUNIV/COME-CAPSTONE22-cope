@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:telemedicine_app1/screens/treatmentstart_screen.dart';
 
 
+
 class SearchScreen extends StatefulWidget {
   _SearchScreenState createState() => _SearchScreenState();
 }
@@ -26,7 +27,6 @@ class _SearchScreenState extends State<SearchScreen> {
         appBar: AppBar(
           title: Text('의사 리스트'),
           centerTitle: true,
-          
         ),
         body: Container(
           child: FutureBuilder(
@@ -61,25 +61,8 @@ class _SearchScreenState extends State<SearchScreen> {
                                               children: <Widget>[]))
                                     ],
                                   ),
-                                  SizedBox(
-                                    width: 20,
-                                  ),
-                                  Column(
-                                    children: [
-                                      SizedBox(
-                                        height: 5,
-                                      ),
-                                      Text(
-                                        collection['department'],
-                                        style: TextStyle(
-                                            fontSize: 20, color: Colors.black),
-                                      ),
-                                      SizedBox(
-                                        height: 5,
-                                      ),
 
-                                    ],
-                                  ),
+
 
                                   SizedBox(
                                     width: 20,

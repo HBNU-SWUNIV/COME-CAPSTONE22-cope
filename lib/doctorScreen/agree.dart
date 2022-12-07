@@ -1,17 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'Feed.dart';
-import 'package:flutter/foundation.dart';
-import 'package:url_launcher/url_launcher.dart';
-
-
-void goWebView(String url) async {
-  if (kIsWeb) {
-    if (await canLaunch(url)) {
-      await launch(url);
-    }
-  }
-}
 
 class AgreePage extends StatefulWidget {
   @override
@@ -24,40 +12,22 @@ class _AgreePageState extends State<AgreePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-            title: Text('예약 완료 환자 리스트'),
-            centerTitle: true,
-            leading: IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Feed()),
-                );
-              },
-              icon: Icon(Icons.arrow_back),
-              iconSize: 20,
-              color: Colors.white,
-            )),
-            
         body: Container(
           child: FutureBuilder(
               future: FirebaseFirestore.instance
                   .collection('user')
-                  .where('isAccepted', isEqualTo: true)
+                  .where('isAccepted', isEqualTo: false)
                   .get(),
               builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
                 if (snapshot.hasData) {
-                  // final List<DocumentSnapshot> documents = snapshot.data!.docs;
+                  final List<DocumentSnapshot> documents = snapshot.data!.docs;
 
                   return ListView.builder(
                       itemCount: snapshot.data!.docs.length,
                       itemBuilder: (BuildContext context, index) {
-                        DocumentSnapshot collection =
-                            snapshot.data!.docs[index];
+                        DocumentSnapshot collection = snapshot.data!.docs[index];
                         return GestureDetector(
-                            onTap: () {
-                              //Navigator.of(context).push(MaterialPageRoute(builder:(BuildContext context) => DetailPage(collection)));
-                            },
+                            onTap: () {},
                             child: Card(
                               child: Column(
                                 children: <Widget>[
@@ -67,7 +37,7 @@ class _AgreePageState extends State<AgreePage> {
                                           padding: const EdgeInsets.all(10.0),
                                           child: Column(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.start,
+                                              MainAxisAlignment.start,
                                               children: <Widget>[
                                                 Text(
                                                   collection['name'],
@@ -90,6 +60,14 @@ class _AgreePageState extends State<AgreePage> {
                                   Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
+                                      /*Text(
+                                        '환자 정보 : ' + collection['birthdate'],
+                                        style: TextStyle(
+                                            fontSize: 15, color: Colors.black),
+                                      ),*/
+                                      SizedBox(
+                                        height: 5,
+                                      ),
                                       Text(
                                         '증상 : ' + collection['description'],
                                         style: TextStyle(
@@ -99,9 +77,7 @@ class _AgreePageState extends State<AgreePage> {
                                         height: 5,
                                       ),
                                       Text(
-                                        '특이사항 : ' +
-                                            collection['information'] +
-                                            collection['birthdate'],
+                                        '특이사항 : ' + collection['information'],
                                         style: TextStyle(
                                             fontSize: 11, color: Colors.black),
                                       ),
@@ -112,10 +88,13 @@ class _AgreePageState extends State<AgreePage> {
                                       children: [
                                         ElevatedButton.icon(
                                           onPressed: () {
-                                            goWebView("https://www.mediatelemedicine.tk/sfu/room");
+                                            dialogPage(context, collection);
                                           },
-                                          icon: const Icon(Icons.camera),
-                                          label: const Text('진료 시작'),
+                                          icon: const Icon(Icons.check),
+                                          label: const Text('예약'),
+                                        ),
+                                        SizedBox(
+                                          width: 10,
                                         ),
                                       ])
                                 ],
@@ -126,5 +105,33 @@ class _AgreePageState extends State<AgreePage> {
                 return CircularProgressIndicator();
               }),
         ));
+  }
+
+  void dialogPage(context, collection) {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            content: Text('예약하시겠습니까?'),
+            actions: <Widget>[
+              TextButton(
+                child: const Text('확인'),
+                onPressed: () {
+                  FirebaseFirestore.instance
+                      .collection('user')
+                      .doc(collection.id)
+                      .update({'isAccepted': true});
+                  Navigator.pop(context);
+                },
+              ),
+              TextButton(
+                child: const Text('취소'),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          );
+        });
   }
 }

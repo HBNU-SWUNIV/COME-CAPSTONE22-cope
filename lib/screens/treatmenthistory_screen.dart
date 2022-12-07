@@ -1,32 +1,26 @@
+import 'dart:math';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
-import 'package:telemedicine_app1/screens/webviewpage.dart';
-import 'package:url_launcher/url_launcher.dart';
 
-
-class TreatmentStart extends StatefulWidget {
+class TreatmentHistory extends StatefulWidget {
   @override
-  _TreatmentStartState createState() => _TreatmentStartState();
+  _TreatmentHistory createState() => _TreatmentHistory();
 }
 
-class _TreatmentStartState extends State<TreatmentStart> {
+class _TreatmentHistory extends State<TreatmentHistory> {
   FirebaseFirestore firestore = FirebaseFirestore.instance;
-
-
-void goWebView(String url) async {
-  if (kIsWeb) {
-    if (await canLaunch(url)) {
-      await launch(url);
-    }
-  }
-}
+  TextEditingController _content1 = TextEditingController();
+  TextEditingController _content2 = TextEditingController();
+  String content1 = '';
+  String content2 = '';
+  String input = '';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('진료 예약 의사 리스트'),
+          title: Text('처방 내역'),
           centerTitle: true,
 
         ),
@@ -38,17 +32,14 @@ void goWebView(String url) async {
                   .get(),
               builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
                 if (snapshot.hasData) {
-                  // final List<DocumentSnapshot> documents = snapshot.data!.docs;
+                  final List<DocumentSnapshot> documents = snapshot.data!.docs;
 
                   return ListView.builder(
                       itemCount: snapshot.data!.docs.length,
                       itemBuilder: (BuildContext context, index) {
-                        DocumentSnapshot collection =
-                            snapshot.data!.docs[index];
+                        DocumentSnapshot collection = snapshot.data!.docs[index];
                         return GestureDetector(
-                            onTap: () {
-                              //Navigator.of(context).push(MaterialPageRoute(builder:(BuildContext context) => DetailPage(collection)));
-                            },
+                            onTap: () {},
                             child: Card(
                               child: Column(
                                 children: <Widget>[
@@ -57,10 +48,11 @@ void goWebView(String url) async {
                                       Padding(
                                           padding: const EdgeInsets.all(10.0),
                                           child: Column(
-                                              crossAxisAlignment:CrossAxisAlignment.start,
+                                              mainAxisAlignment:
+                                              MainAxisAlignment.center,
                                               children: <Widget>[
                                                 Text(
-                                                  collection['name'] + (' 의사'),
+                                                  collection['department'],
                                                   style: TextStyle(
                                                     fontSize: 21,
                                                     color: Colors.black,
@@ -68,26 +60,27 @@ void goWebView(String url) async {
                                                   ),
                                                 ),
                                                 Text(
-                                                  collection['department'],
+                                                  collection['name']+ '의사 ',
                                                   style: TextStyle(
                                                     fontSize: 15,
                                                     color: Colors.black,
+                                                    fontWeight: FontWeight.bold,
                                                   ),
                                                 ),
                                               ]))
                                     ],
                                   ),
-                                  Row(
-                                      mainAxisAlignment: MainAxisAlignment.end,
-                                      children: [
-                                        ElevatedButton.icon(
-                                          onPressed: () {
-                                            Navigator.push(context, MaterialPageRoute(builder: (context) => WebViewPage()));
-                                          },
-                                          icon: const Icon(Icons.camera),
-                                          label: const Text('진료 시작'),
-                                        ),
-                                      ])
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Text(
+                                        '처방 : ' + collection['prescription'],
+                                        style: TextStyle(
+                                            fontSize: 15, color: Colors.black),
+                                      ),
+                                    ],
+                                  ),
                                 ],
                               ),
                             ));

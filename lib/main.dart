@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:telemedicine_app1/screens/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -11,11 +10,14 @@ void main() async{
       appId: "1:870698944767:android:653d86ea0ae2240d1524ca", // Your appId
       messagingSenderId: "870698944767", // Your messagingSenderId
       projectId: "telemedicine-app-2c261", // Your projectId
+      storageBucket: "telemedicine-app-2c261.appspot.com",
+      authDomain: "telemedicine-app-2c261.firebaseapp.com",
     ),
 
   );
   runApp(MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -25,10 +27,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'telemedicine app',
-      theme: ThemeData(
-          primarySwatch: Colors.blue
-      ),
-      home: LoginSignupScreen(),
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home:
+      LoginSignupScreen()
+
     );
+    }
   }
-}
+
+

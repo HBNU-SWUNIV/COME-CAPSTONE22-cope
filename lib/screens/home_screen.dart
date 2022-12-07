@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:telemedicine_app1/screens/mypage_screen.dart';
 import 'package:telemedicine_app1/screens/doctorlist_screen.dart';
+import 'package:telemedicine_app1/screens/treatmenthistory_screen.dart';
 import 'package:telemedicine_app1/screens/treatmentstart_screen.dart';
 import 'package:telemedicine_app1/widget/bottom_bar.dart';
 
@@ -61,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
             children: <Widget>[
               SearchScreen(),
               TreatmentStart(),
-              Container(),
+              TreatmentHistory(),
               MyPageScreen(),
 
               
