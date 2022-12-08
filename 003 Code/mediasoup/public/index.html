@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <style>
+        body {
+            background-color:#2196F3;
+        }
+        video.local {
+                    top: 7vh;
+                    left: 3vw;
+                    width: 24vw;
+                    height: 30vh;
+                    z-index: 1;
+                    position: absolute;
+                    object-fit: fill;
+                    border: 3px solid white;
+                }
+
+                video.remote {
+                    width: 30vw;
+                    height: 79vh;
+                    top: 7vh;
+                    left: 30vw;
+                    position: absolute;
+                    object-fit: fill;
+                    border: 3px solid white;
+                }
+
+                video.remote2 {
+                width: 30vw;
+                height: 79vh;
+                top: 7vh;
+                left: 63vw;
+                position: absolute;
+                object-fit: fill;
+                border: 3px solid white;
+                }
+
+                .material-icons-microphone {
+                    font-family: 'Material Icons';
+                    font-weight: normal;
+                    font-style: normal;
+                    font-size: 36px;
+                    margin-left: 10vw;
+                    margin-top:  90vh;
+                    border-radius: 30%
+                }
+
+                .material-icons-camera {
+                    font-family: 'Material Icons';
+                    font-weight: normal;
+                    font-style: normal;
+                    font-size: 36px;
+                    margin-left: 40vw;
+                    margin-top:  90vh;
+                    border-radius: 30%
+                }
+                
+                @media(max-width:1000px) {
+                    video.local {
+                    width: 25vw;
+                    height: 25vh;
+                    top: 4vh;
+                    left: 3vw;
+                    z-index: 1;
+                    position: absolute;
+                    object-fit: fill;
+                }
+
+                video.remote {
+                    width: 80vw;
+                    height: 40vh;
+                    top: 7vh;
+                    left: 10vw;
+                    object-fit: fill;
+                }
+
+                video.remote2 {
+                    width: 80vw;
+                    height: 40vh;
+                    top: 48vh;
+                    left: 10vw;
+                    object-fit: fill;
+                    border: 3px solid white;
+                }
+
+                .material-icons-microphone {
+                    font-family: 'Material Icons';
+                    font-weight: normal;
+                    font-style: normal;
+                    font-size: 36px;
+                    margin-left: 14vw;
+                    margin-top:  90vh;
+                    border-radius: 30%
+                }
+
+                .material-icons-camera {
+                    font-family: 'Material Icons';
+                    font-weight: normal;
+                    font-style: normal;
+                    font-size: 36px;
+                    margin-left: 37vw;
+                    margin-top:  90vh;
+                    border-radius: 30%
+                }
+            }
+    </style>
+  </head>
+  <body>
+    <body>
+        <div id="video">
+            <table class="mainTable">
+                <tbody>
+                    <tr>
+                        <td class="localColumn">
+                            <video id="localVideo" autoplay class="local" muted controls></video>
+                        </td>
+                        <td class="remoteColumn">
+                            <div id="videoContainer"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button id="switchbtn" type="button" class="material-icons-camera">cameraswitch</button>
+        <button id="mutebtn" type="button" class="material-icons-microphone">mic</button>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+    </body>
+  </body>
+  <footer>
+      <script src="bundle.js"></script>
+  </footer>
+</html>
