@@ -1,0 +1,2 @@
+com/yoonjaepark/flutter_naver_login/BuildConfig.java
+ com.yoonjaepark.flutter_naver_login.BuildConfig

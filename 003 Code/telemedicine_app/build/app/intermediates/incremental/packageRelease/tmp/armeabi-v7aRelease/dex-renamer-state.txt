@@ -1,0 +1,4 @@
+#Wed Nov 30 03:15:37 KST 2022
+base.0=/Users/jeongjiho/Documents/telemedicine_app2/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

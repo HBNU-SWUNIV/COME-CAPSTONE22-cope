@@ -1,0 +1,198 @@
+[
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/package_list_item.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/dda2981d16726c8a3006f3a7ac6b4136/jetified-oauth-5.2.0/res/layout/package_list_item.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/eab5bab970b853eac20ce27e4c7e73bb/media-1.0.0/res/layout/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/custom_dialog.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/14b93615368c2249f1830e26ca064ab5/core-1.6.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_screen_content_include.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_action_menu_layout.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/notification_template_lines_media.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/eab5bab970b853eac20ce27e4c7e73bb/media-1.0.0/res/layout/notification_template_lines_media.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/notification_template_big_media.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/eab5bab970b853eac20ce27e4c7e73bb/media-1.0.0/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_alert_dialog_title_material.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/activity_oauth_webview.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/dda2981d16726c8a3006f3a7ac6b4136/jetified-oauth-5.2.0/res/layout/activity_oauth_webview.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_search_view.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/notification_template_media_custom.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/eab5bab970b853eac20ce27e4c7e73bb/media-1.0.0/res/layout/notification_template_media_custom.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/14b93615368c2249f1830e26ca064ab5/core-1.6.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/notification_template_media.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/eab5bab970b853eac20ce27e4c7e73bb/media-1.0.0/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_tooltip.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_tooltip.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_select_dialog_material.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/14b93615368c2249f1830e26ca064ab5/core-1.6.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_screen_toolbar.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/notification_media_action.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/eab5bab970b853eac20ce27e4c7e73bb/media-1.0.0/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/nid_progress_dialog.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/dda2981d16726c8a3006f3a7ac6b4136/jetified-oauth-5.2.0/res/layout/nid_progress_dialog.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/select_dialog_item_material.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/eab5bab970b853eac20ce27e4c7e73bb/media-1.0.0/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_cascading_menu_item_layout.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_cascading_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/browser_actions_context_menu_row.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/ec20f7242759cfe0d6237ced59ef1a02/browser-1.0.0/res/layout/browser_actions_context_menu_row.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/browser_actions_context_menu_page.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/ec20f7242759cfe0d6237ced59ef1a02/browser-1.0.0/res/layout/browser_actions_context_menu_page.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_action_mode_bar.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_dialog_title_material.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_screen_simple.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/notification_template_big_media_custom.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/eab5bab970b853eac20ce27e4c7e73bb/media-1.0.0/res/layout/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/e0b07e33c401bd5d85c23fcf600e8610/appcompat-1.3.1/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/jeongjiho/Documents/telemedicine_app2/build/flutter_naver_login/intermediates/res/merged/release/layout/notification_media_cancel_action.xml",
+        "source": "/Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/eab5bab970b853eac20ce27e4c7e73bb/media-1.0.0/res/layout/notification_media_cancel_action.xml"
+    }
+]

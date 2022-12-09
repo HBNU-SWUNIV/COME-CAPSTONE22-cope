@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/hanbat/telemedicine_app/BuildConfig.java
+ com.hanbat.telemedicine_app.BuildConfig

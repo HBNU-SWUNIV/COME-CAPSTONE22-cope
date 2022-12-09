@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">870698944767-2et06bt9o6l3kpii268hbgqtojrhfeq0.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">870698944767</string>
+    <string name="google_api_key" translatable="false">AIzaSyA9zQlkh5Q1OgsZDFot-koarbj3PifyZsY</string>
+    <string name="google_app_id" translatable="false">1:870698944767:android:e30bc3f89b954a681524ca</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA9zQlkh5Q1OgsZDFot-koarbj3PifyZsY</string>
+    <string name="google_storage_bucket" translatable="false">telemedicine-app-2c261.appspot.com</string>
+    <string name="project_id" translatable="false">telemedicine-app-2c261</string>
+</resources>

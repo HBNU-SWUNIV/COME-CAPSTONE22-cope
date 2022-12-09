@@ -1,0 +1,519 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.hanbat.telemedicine_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="31"
+9        android:targetSdkVersion="32" />
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:3:5-64
+11-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:3:22-62
+12    <!--
+13         Flutter needs it to communicate with the running application
+14         to allow setting breakpoints, to provide hot reload, etc.
+15    -->
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:4:5-66
+16-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:4:22-64
+17    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+17-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:5:5-70
+17-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:5:22-68
+18
+19    <queries>
+19-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-11:15
+20        <intent>
+20-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-10:18
+21            <action android:name="android.support.customtabs.action.CustomTabsService" />
+21-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-90
+21-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:21-87
+22        </intent>
+23
+24        <package android:name="com.kakao.talk" />
+24-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-50
+24-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-47
+25        <package android:name="com.kakao.onetalk" />
+25-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:9:9-53
+25-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:9:18-50
+26        <package android:name="com.locnall.KimGiSa" />
+26-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-55
+26-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:10:18-52
+27        <package android:name="com.lguplus.navi" />
+27-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-52
+27-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:11:18-49
+28
+29        <intent>
+29-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-19:18
+30            <action android:name="android.intent.action.VIEW" />
+30-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:24:16-68
+30-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:24:24-65
+31
+32            <category android:name="android.intent.category.BROWSABLE" />
+32-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:26:16-77
+32-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:26:26-74
+33
+34            <data android:scheme="https" />
+34-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:29:16-99
+34-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:29:22-76
+35        </intent>
+36    </queries>
+37
+38    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+38-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
+38-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:22-76
+39    <uses-permission android:name="android.permission.WAKE_LOCK" />
+39-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/7d5b1fffc51b960b2b037c0a4ad4538e/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:24:5-68
+39-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/7d5b1fffc51b960b2b037c0a4ad4538e/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:24:22-65
+40    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+40-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/7d5b1fffc51b960b2b037c0a4ad4538e/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:25:5-79
+40-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/7d5b1fffc51b960b2b037c0a4ad4538e/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:25:22-76
+41    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+41-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1a66b708c4a5d23bfc119482fb80619f/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:26:5-110
+41-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1a66b708c4a5d23bfc119482fb80619f/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:26:22-107
+42
+43    <application
+43-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:6:4-64:19
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.8.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/340f73096e343129323054dd621e22bf/core-1.8.0/AndroidManifest.xml:24:18-86
+45        android:debuggable="true"
+46        android:extractNativeLibs="false"
+47        android:icon="@mipmap/ic_launcher"
+47-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:8:9-43
+48        android:label="COPE" >
+48-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:7:9-29
+49        <meta-data
+49-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:10:8-12:48
+50            android:name="com.naver.sdk.clientId"
+50-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:11:12-49
+51            android:value="@string/client_id" />
+51-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:12:12-45
+52        <meta-data
+52-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:13:8-15:52
+53            android:name="com.naver.sdk.clientSecret"
+53-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:14:12-53
+54            android:value="@string/client_secret" />
+54-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:15:12-49
+55        <meta-data
+55-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:16:8-18:50
+56            android:name="com.naver.sdk.clientName"
+56-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:17:12-51
+57            android:value="@string/client_name" />
+57-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:18:12-47
+58
+59        <activity
+59-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:20:8-31:19
+60            android:name="com.kakao.sdk.flutter.AuthCodeCustomTabsActivity"
+60-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:21:12-75
+61            android:exported="true"
+61-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:22:12-35
+62            android:launchMode="singleTask"
+62-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:32:13-44
+63            android:theme="@style/TransparentCompat" >
+63-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:33:13-53
+64            <intent-filter android:label="flutter_web_auth" >
+64-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:23:12-30:28
+64-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:23:27-59
+65                <action android:name="android.intent.action.VIEW" />
+65-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:24:16-68
+65-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:24:24-65
+66
+67                <category android:name="android.intent.category.DEFAULT" />
+67-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:25:16-75
+67-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:25:26-72
+68                <category android:name="android.intent.category.BROWSABLE" />
+68-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:26:16-77
+68-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:26:26-74
+69
+70                <!-- Redirect URI, "kakao${YOUR_NATIVE_APP_KEY}://oauth" 형식 -->
+71                <data
+71-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:29:16-99
+72                    android:host="oauth"
+72-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:29:77-97
+73                    android:scheme="kakaode39f6175fa46cda780c2ec5d7061c8b" />
+73-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:29:22-76
+74            </intent-filter>
+75        </activity>
+76        <activity
+76-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:33:9-58:20
+77            android:name="com.hanbat.telemedicine_app.MainActivity"
+77-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:34:13-41
+78            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+78-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:37:13-163
+79            android:exported="true"
+79-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:39:13-36
+80            android:hardwareAccelerated="false"
+80-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:38:13-48
+81            android:launchMode="singleTop"
+81-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:35:13-43
+82            android:theme="@style/LaunchTheme"
+82-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:36:13-47
+83            android:windowSoftInputMode="adjustResize" >
+83-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:40:13-55
+84
+85            <!--
+86                 Specifies an Android theme to apply to this Activity as soon as
+87                 the Android process has started. This theme is visible to the user
+88                 while the Flutter UI initializes. After that, this theme continues
+89                 to determine the Window background behind the Flutter UI.
+90            -->
+91            <meta-data
+91-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:45:13-48:17
+92                android:name="io.flutter.embedding.android.NormalTheme"
+92-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:46:15-70
+93                android:resource="@style/NormalTheme" />
+93-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:47:15-52
+94            <!--
+95                 Displays an Android View that continues showing the launch screen
+96                 Drawable until Flutter paints its first frame, then this splash
+97                 screen fades out. A splash screen is useful to avoid any visual
+98                 gap between the end of Android's launch screen and the painting of
+99                 Flutter's first frame.
+100            -->
+101            <intent-filter>
+101-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:54:13-57:29
+102                <action android:name="android.intent.action.MAIN" />
+102-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:55:17-68
+102-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:55:25-66
+103
+104                <category android:name="android.intent.category.LAUNCHER" />
+104-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:56:17-76
+104-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:56:27-74
+105            </intent-filter>
+106        </activity>
+107        <!--
+108             Don't delete the meta-data below.
+109             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+110        -->
+111        <meta-data
+111-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:61:9-63:33
+112            android:name="flutterEmbedding"
+112-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:62:13-44
+113            android:value="2" />
+113-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:63:13-30
+114
+115        <service
+115-->[:firebase_auth] /Users/jeongjiho/Documents/telemedicine_app2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+116            android:name="com.google.firebase.components.ComponentDiscoveryService"
+116-->[:firebase_auth] /Users/jeongjiho/Documents/telemedicine_app2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+117            android:directBootAware="true"
+117-->[com.google.firebase:firebase-common:20.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0c08bc86d310840bf91c178fa8844b52/jetified-firebase-common-20.2.0/AndroidManifest.xml:34:13-43
+118            android:exported="false" >
+118-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:66:13-37
+119            <meta-data
+119-->[:firebase_auth] /Users/jeongjiho/Documents/telemedicine_app2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+120                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+120-->[:firebase_auth] /Users/jeongjiho/Documents/telemedicine_app2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[:firebase_auth] /Users/jeongjiho/Documents/telemedicine_app2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+122            <meta-data
+122-->[:cloud_firestore] /Users/jeongjiho/Documents/telemedicine_app2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+123                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+123-->[:cloud_firestore] /Users/jeongjiho/Documents/telemedicine_app2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[:cloud_firestore] /Users/jeongjiho/Documents/telemedicine_app2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+125            <meta-data
+125-->[:firebase_core] /Users/jeongjiho/Documents/telemedicine_app2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+126                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+126-->[:firebase_core] /Users/jeongjiho/Documents/telemedicine_app2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[:firebase_core] /Users/jeongjiho/Documents/telemedicine_app2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:67:13-69:85
+129                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+129-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:68:17-109
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:69:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-firestore:24.4.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/d2e870b02ffb2eaf56ec99d0c9690b6d/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:19:13-21:85
+132                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+132-->[com.google.firebase:firebase-firestore:24.4.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/d2e870b02ffb2eaf56ec99d0c9690b6d/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:20:17-111
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-firestore:24.4.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/d2e870b02ffb2eaf56ec99d0c9690b6d/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:21:17-82
+134            <meta-data
+134-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/7d5b1fffc51b960b2b037c0a4ad4538e/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:31:13-33:85
+135                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+135-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/7d5b1fffc51b960b2b037c0a4ad4538e/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:32:17-139
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/7d5b1fffc51b960b2b037c0a4ad4538e/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:33:17-82
+137            <meta-data
+137-->[com.google.firebase:firebase-installations:17.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/48eeb7a2f8854137940160f9d01184a8/jetified-firebase-installations-17.1.0/AndroidManifest.xml:17:13-19:85
+138                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+138-->[com.google.firebase:firebase-installations:17.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/48eeb7a2f8854137940160f9d01184a8/jetified-firebase-installations-17.1.0/AndroidManifest.xml:18:17-127
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.firebase:firebase-installations:17.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/48eeb7a2f8854137940160f9d01184a8/jetified-firebase-installations-17.1.0/AndroidManifest.xml:19:17-82
+140        </service>
+141
+142        <activity
+142-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-18:47
+143            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+143-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-104
+144            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+144-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-137
+145            android:exported="false"
+145-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-37
+146            android:theme="@style/AppTheme" />
+146-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-44
+147        <activity
+147-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-22:55
+148            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+148-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-112
+149            android:exported="false"
+149-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-37
+150            android:theme="@style/ThemeTransparent" />
+150-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-52
+151        <activity
+151-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-26:55
+152            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
+152-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-106
+153            android:exported="false"
+153-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-37
+154            android:theme="@style/ThemeTransparent" />
+154-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-52
+155        <activity
+155-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-31:55
+156            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+156-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-126
+157            android:exported="false"
+157-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-37
+158            android:launchMode="singleInstance"
+158-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-48
+159            android:theme="@style/ThemeTransparent" />
+159-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-52
+160        <activity
+160-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:32:9-36:55
+161            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+161-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:33:13-120
+162            android:exported="false"
+162-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-37
+163            android:launchMode="singleInstance"
+163-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-48
+164            android:theme="@style/ThemeTransparent" />
+164-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-52
+165
+166        <receiver
+166-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:38:9-41:40
+167            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
+167-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-111
+168            android:enabled="true"
+168-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-35
+169            android:exported="false" />
+169-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-37
+170
+171        <meta-data
+171-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:43:9-45:36
+172            android:name="io.flutter.embedded_views_preview"
+172-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:44:13-61
+173            android:value="true" />
+173-->[:flutter_inappwebview] /Users/jeongjiho/Documents/telemedicine_app2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:45:13-33
+174
+175        <activity
+175-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-28:56
+176            android:name="com.kakao.sdk.flutter.TalkAuthCodeActivity"
+176-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-70
+177            android:configChanges="orientation|screenSize|keyboardHidden"
+177-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-74
+178            android:exported="false"
+178-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-37
+179            android:launchMode="singleTask"
+179-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-44
+180            android:theme="@style/TransparentCompat" />
+180-->[:kakao_flutter_sdk_common] /Users/jeongjiho/Documents/telemedicine_app2/build/kakao_flutter_sdk_common/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-53
+181        <activity
+181-->[:url_launcher_android] /Users/jeongjiho/Documents/telemedicine_app2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+182            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+182-->[:url_launcher_android] /Users/jeongjiho/Documents/telemedicine_app2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+183            android:exported="false"
+183-->[:url_launcher_android] /Users/jeongjiho/Documents/telemedicine_app2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+184            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+184-->[:url_launcher_android] /Users/jeongjiho/Documents/telemedicine_app2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+185
+186        <uses-library
+186-->[androidx.window:window:1.0.0-beta04] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+187            android:name="androidx.window.extensions"
+187-->[androidx.window:window:1.0.0-beta04] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+188            android:required="false" />
+188-->[androidx.window:window:1.0.0-beta04] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+189        <uses-library
+189-->[androidx.window:window:1.0.0-beta04] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+190            android:name="androidx.window.sidecar"
+190-->[androidx.window:window:1.0.0-beta04] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+191            android:required="false" />
+191-->[androidx.window:window:1.0.0-beta04] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+192
+193        <activity
+193-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:27:9-44:20
+194            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+194-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:28:13-80
+195            android:excludeFromRecents="true"
+195-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:29:13-46
+196            android:exported="true"
+196-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:30:13-36
+197            android:launchMode="singleTask"
+197-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:31:13-44
+198            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+198-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:32:13-72
+199            <intent-filter>
+199-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:33:13-43:29
+200                <action android:name="android.intent.action.VIEW" />
+200-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:24:16-68
+200-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:24:24-65
+201
+202                <category android:name="android.intent.category.DEFAULT" />
+202-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:25:16-75
+202-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:25:26-72
+203                <category android:name="android.intent.category.BROWSABLE" />
+203-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:26:16-77
+203-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:26:26-74
+204
+205                <data
+205-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:29:16-99
+206                    android:host="firebase.auth"
+206-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:29:77-97
+207                    android:path="/"
+208                    android:scheme="genericidp" />
+208-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:29:22-76
+209            </intent-filter>
+210        </activity>
+211        <activity
+211-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:45:9-62:20
+212            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+212-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:46:13-79
+213            android:excludeFromRecents="true"
+213-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:47:13-46
+214            android:exported="true"
+214-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:48:13-36
+215            android:launchMode="singleTask"
+215-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:49:13-44
+216            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+216-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:50:13-72
+217            <intent-filter>
+217-->[com.google.firebase:firebase-auth:21.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:51:13-61:29
+218                <action android:name="android.intent.action.VIEW" />
+218-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:24:16-68
+218-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:24:24-65
+219
+220                <category android:name="android.intent.category.DEFAULT" />
+220-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:25:16-75
+220-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:25:26-72
+221                <category android:name="android.intent.category.BROWSABLE" />
+221-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:26:16-77
+221-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:26:26-74
+222
+223                <data
+223-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:29:16-99
+224                    android:host="firebase.auth"
+224-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:29:77-97
+225                    android:path="/"
+226                    android:scheme="recaptcha" />
+226-->/Users/jeongjiho/Documents/telemedicine_app2/android/app/src/main/AndroidManifest.xml:29:22-76
+227            </intent-filter>
+228        </activity>
+229        <activity
+229-->[com.google.android.gms:play-services-auth:20.4.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0570a0c80f5d35a178dc1d38a01007b0/jetified-play-services-auth-20.4.0/AndroidManifest.xml:23:9-27:75
+230            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+230-->[com.google.android.gms:play-services-auth:20.4.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0570a0c80f5d35a178dc1d38a01007b0/jetified-play-services-auth-20.4.0/AndroidManifest.xml:24:13-93
+231            android:excludeFromRecents="true"
+231-->[com.google.android.gms:play-services-auth:20.4.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0570a0c80f5d35a178dc1d38a01007b0/jetified-play-services-auth-20.4.0/AndroidManifest.xml:25:13-46
+232            android:exported="false"
+232-->[com.google.android.gms:play-services-auth:20.4.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0570a0c80f5d35a178dc1d38a01007b0/jetified-play-services-auth-20.4.0/AndroidManifest.xml:26:13-37
+233            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+233-->[com.google.android.gms:play-services-auth:20.4.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0570a0c80f5d35a178dc1d38a01007b0/jetified-play-services-auth-20.4.0/AndroidManifest.xml:27:13-72
+234        <!--
+235            Service handling Google Sign-In user revocation. For apps that do not integrate with
+236            Google Sign-In, this service will never be started.
+237        -->
+238        <service
+238-->[com.google.android.gms:play-services-auth:20.4.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0570a0c80f5d35a178dc1d38a01007b0/jetified-play-services-auth-20.4.0/AndroidManifest.xml:33:9-37:51
+239            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+239-->[com.google.android.gms:play-services-auth:20.4.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0570a0c80f5d35a178dc1d38a01007b0/jetified-play-services-auth-20.4.0/AndroidManifest.xml:34:13-89
+240            android:exported="true"
+240-->[com.google.android.gms:play-services-auth:20.4.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0570a0c80f5d35a178dc1d38a01007b0/jetified-play-services-auth-20.4.0/AndroidManifest.xml:35:13-36
+241            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+241-->[com.google.android.gms:play-services-auth:20.4.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0570a0c80f5d35a178dc1d38a01007b0/jetified-play-services-auth-20.4.0/AndroidManifest.xml:36:13-107
+242            android:visibleToInstantApps="true" />
+242-->[com.google.android.gms:play-services-auth:20.4.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0570a0c80f5d35a178dc1d38a01007b0/jetified-play-services-auth-20.4.0/AndroidManifest.xml:37:13-48
+243
+244        <provider
+244-->[com.google.firebase:firebase-common:20.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0c08bc86d310840bf91c178fa8844b52/jetified-firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
+245            android:name="com.google.firebase.provider.FirebaseInitProvider"
+245-->[com.google.firebase:firebase-common:20.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0c08bc86d310840bf91c178fa8844b52/jetified-firebase-common-20.2.0/AndroidManifest.xml:26:13-77
+246            android:authorities="com.hanbat.telemedicine_app.firebaseinitprovider"
+246-->[com.google.firebase:firebase-common:20.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0c08bc86d310840bf91c178fa8844b52/jetified-firebase-common-20.2.0/AndroidManifest.xml:27:13-72
+247            android:directBootAware="true"
+247-->[com.google.firebase:firebase-common:20.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0c08bc86d310840bf91c178fa8844b52/jetified-firebase-common-20.2.0/AndroidManifest.xml:28:13-43
+248            android:exported="false"
+248-->[com.google.firebase:firebase-common:20.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0c08bc86d310840bf91c178fa8844b52/jetified-firebase-common-20.2.0/AndroidManifest.xml:29:13-37
+249            android:initOrder="100" />
+249-->[com.google.firebase:firebase-common:20.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0c08bc86d310840bf91c178fa8844b52/jetified-firebase-common-20.2.0/AndroidManifest.xml:30:13-36
+250
+251        <receiver
+251-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1a66b708c4a5d23bfc119482fb80619f/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:29:9-33:20
+252            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+252-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1a66b708c4a5d23bfc119482fb80619f/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:30:13-85
+253            android:enabled="true"
+253-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1a66b708c4a5d23bfc119482fb80619f/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:31:13-35
+254            android:exported="false" >
+254-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1a66b708c4a5d23bfc119482fb80619f/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:32:13-37
+255        </receiver>
+256
+257        <service
+257-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1a66b708c4a5d23bfc119482fb80619f/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:35:9-38:40
+258            android:name="com.google.android.gms.measurement.AppMeasurementService"
+258-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1a66b708c4a5d23bfc119482fb80619f/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:36:13-84
+259            android:enabled="true"
+259-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1a66b708c4a5d23bfc119482fb80619f/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:37:13-35
+260            android:exported="false" />
+260-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1a66b708c4a5d23bfc119482fb80619f/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:38:13-37
+261        <service
+261-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1a66b708c4a5d23bfc119482fb80619f/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:39:9-43:72
+262            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+262-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1a66b708c4a5d23bfc119482fb80619f/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:40:13-87
+263            android:enabled="true"
+263-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1a66b708c4a5d23bfc119482fb80619f/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:41:13-35
+264            android:exported="false"
+264-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1a66b708c4a5d23bfc119482fb80619f/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:42:13-37
+265            android:permission="android.permission.BIND_JOB_SERVICE" />
+265-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1a66b708c4a5d23bfc119482fb80619f/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:43:13-69
+266
+267        <activity
+267-->[com.google.android.gms:play-services-base:18.0.1] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+268            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+268-->[com.google.android.gms:play-services-base:18.0.1] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+269            android:exported="false"
+269-->[com.google.android.gms:play-services-base:18.0.1] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+270            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+270-->[com.google.android.gms:play-services-base:18.0.1] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+271
+272        <meta-data
+272-->[com.google.android.gms:play-services-basement:18.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/2b462d18cf813a211efdfdb2e62fbaef/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+273            android:name="com.google.android.gms.version"
+273-->[com.google.android.gms:play-services-basement:18.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/2b462d18cf813a211efdfdb2e62fbaef/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+274            android:value="@integer/google_play_services_version" />
+274-->[com.google.android.gms:play-services-basement:18.1.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/2b462d18cf813a211efdfdb2e62fbaef/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+275
+276        <provider
+276-->[androidx.emoji2:emoji2:1.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0d68e278455c816013a4fbdcf9e0539a/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+277            android:name="androidx.startup.InitializationProvider"
+277-->[androidx.emoji2:emoji2:1.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0d68e278455c816013a4fbdcf9e0539a/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+278            android:authorities="com.hanbat.telemedicine_app.androidx-startup"
+278-->[androidx.emoji2:emoji2:1.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0d68e278455c816013a4fbdcf9e0539a/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+279            android:exported="false" >
+279-->[androidx.emoji2:emoji2:1.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0d68e278455c816013a4fbdcf9e0539a/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+280            <meta-data
+280-->[androidx.emoji2:emoji2:1.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0d68e278455c816013a4fbdcf9e0539a/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+281                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+281-->[androidx.emoji2:emoji2:1.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0d68e278455c816013a4fbdcf9e0539a/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+282                android:value="androidx.startup" />
+282-->[androidx.emoji2:emoji2:1.2.0] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/0d68e278455c816013a4fbdcf9e0539a/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+283            <meta-data
+283-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/d5842e3d8518226de22dc2811520cf78/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+284                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+284-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/d5842e3d8518226de22dc2811520cf78/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+285                android:value="androidx.startup" />
+285-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/jeongjiho/.gradle/caches/transforms-2/files-2.1/d5842e3d8518226de22dc2811520cf78/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+286        </provider>
+287    </application>
+288
+289</manifest>
